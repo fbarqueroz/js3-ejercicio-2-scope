@@ -23,20 +23,14 @@
 
 // Tu código aquí
 function botonClickeado() {
-    // console.log('Hiciste click en el botón' + ' ' + buttonLogin);
-
-  if (botonClickeado == $0) {
-    return ("1");
-  }
-
-
+  console.log('Hiciste click en el botón' + ' ' + botones.num);
   
+}
   // BOILERPLATE
   var botones = document.querySelectorAll(".one button");
   for (var i = 0; i < botones.length; i++) {
     botones[i].addEventListener("click", botonClickeado(i));
   }
-}
   /*
     EJERCICIO B: --------------------------------------------
     Al hacer click en el botón "Incrementar"
@@ -52,13 +46,17 @@ function botonClickeado() {
   */
   
   // Tu código aquí
-  function incrementarFunc() {}
+  function incrementarFunc () {
+    num = 0;
+    count = 1;
+    console.log (num);
+  }
   
   // BOILERPLATE
   const actualizar = incrementarFunc();
   const incrementar = document.querySelector("#incementar");
   incrementar.addEventListener("click", function() {
-    this.innerText = "Incrementar " + actualizar();
+    this.innerText = "incrementar" + actualizar();
   });
   
   /*
